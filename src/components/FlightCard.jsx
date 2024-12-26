@@ -1,5 +1,7 @@
 
+
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../styles/FlightCard.css";
 
 function FlightCard({ flight }) {
@@ -16,5 +18,16 @@ function FlightCard({ flight }) {
         </div>
     );
 }
+
+FlightCard.propTypes = {
+    flight: PropTypes.shape({
+        airlineName: PropTypes.string.isRequired,
+        departureAirport: PropTypes.string.isRequired,
+        arrivalAirport: PropTypes.string.isRequired,
+        departureTime: PropTypes.string.isRequired,
+        arrivalTime: PropTypes.string.isRequired,
+        id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    }).isRequired,
+};
 
 export default FlightCard;

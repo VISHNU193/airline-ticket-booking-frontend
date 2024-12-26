@@ -1,9 +1,15 @@
 .footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #007bff;
+    position: fixed; /* Ensures the footer stays at the bottom */
+    bottom: 0; /* Aligns it to the bottom of the viewport */
+    left: 0;
+    width: 100%; /* Stretches across the width of the page */
+    height: 40px; /* Smaller footer height */
+    background-color: #007bff; /* Matches your dark theme */
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    font-size: 14px; /* Smaller text size */
+  }
+  
