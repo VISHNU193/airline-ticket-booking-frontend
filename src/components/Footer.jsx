@@ -1,5 +1,5 @@
 
-import "src/styles/Navbar.css";
+import "../styles/Footer.css";
 
 function Footer() {
     return (

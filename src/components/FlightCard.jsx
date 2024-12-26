@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import "./FlightCard.css";
+import "../styles/FlightCard.css";
 
 function FlightCard({ flight }) {
     return (
