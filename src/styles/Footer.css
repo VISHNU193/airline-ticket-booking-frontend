@@ -1,15 +1,25 @@
 .footer {
-    position: fixed; /* Ensures the footer stays at the bottom */
-    bottom: 0; /* Aligns it to the bottom of the viewport */
-    left: 0;
-    width: 100%; /* Stretches across the width of the page */
-    height: 40px; /* Smaller footer height */
-    background-color: #007bff; /* Matches your dark theme */
+    width: 100%;
+    background-color: #040408f3;
     color: white;
     text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensures it's below the content */
+}
+
+body, html {
+    height: 100%; /* Ensure body and html stretch to full height */
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center; /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
-    font-size: 14px; /* Smaller text size */
-  }
-  
+    flex-direction: column;
+}
+
+#root {
+    flex-grow: 1; /* Ensures the root element fills available space */
+}
+
+/* Ensure footer stays at the bottom */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom of the screen */
+}
